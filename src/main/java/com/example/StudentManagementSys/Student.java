@@ -1,4 +1,4 @@
-package com.example.StudentManagementSys.entities;
+package com.example.StudentManagementSys;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.relational.core.mapping.Column;

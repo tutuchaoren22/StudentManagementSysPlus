@@ -1,4 +1,4 @@
-package com.example.StudentManagementSys.util;
+package com.example.StudentManagementSys;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -14,7 +14,7 @@ public class DataSourceConfig {
     public DataSource dataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
-        dataSource.setUrl("jdbc:mysql://localhost:3306/student_management_sys?useUnicode=true&characterEncoding=utf-8");
+        dataSource.setUrl("jdbc:mysql://localhost:3306/student_management_sys?useUnicode=true&characterEncoding=utf-8&serverTimezone=Hongkong");
         dataSource.setUsername("root");
         dataSource.setPassword("123456");
         return dataSource;
