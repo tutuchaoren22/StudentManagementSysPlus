@@ -1,8 +1,19 @@
 package com.example.StudentManagementSys.entities;
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.relational.core.mapping.Column;
+import org.springframework.data.relational.core.mapping.Table;
+import org.springframework.data.relational.core.sql.In;
+
+@Table("student")
 public class Student {
+    @Id
+    private Integer id;
+    @Column("name")
     private String name;
+    @Column("gender")
     private String gender;
+    @Column("class_number")
     private String classNumber;
 
     public Student() {
